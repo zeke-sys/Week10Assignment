@@ -1,0 +1,57 @@
+<!--Zeke 2023-->
+<!--Coding Steps:
+Using HTML, Bootstrap, and JavaScript, create a single page website that contains the following:
+    - A Bootstrap styled table representing your choice of data
+    - A bootstrap styled form that allows a user to add a new row to the table when clicking on submit. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10 Assignment</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container" style="background-color: lightgray;">
+
+    <br>
+
+    <!--Setting up the input/intake form-->
+    <h1 class="text-center">Music Catalog - Michael Jackson</h1> <!--Title-->
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-album-name">Album Name</label>
+                        <input type="text" class="form-control" id="new-album-name" placeholder="Music Album">
+                        <label for="new-release-year">Release Year</label>
+                        <input type="text" class="form-control" id="new-release-year" placeholder="Year Released">
+                        <label for="new-number-songs">Number Of Songs</label>
+                        <input type="text" class="form-control" id="new-number-songs" placeholder="Number of Songs">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="add" class="btn btn-primary form-control">Add</button> <!--button div to add input-->
+            </div>
+        </div>
+    </div><br>
+
+    <table id="list" class="table table-dark table-striped"> <!--table to receive the data-->
+        <tr>
+            <th>Album Title</th>
+            <th>Release Year</th>
+            <th>Number of Songs</th>
+            <th>Actions</th>            
+        </tr>
+    </table>
+
+    <!--See JS file for suggestions of albums to fill the table with :) -->
+
+    <script src="index10Assignment.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
